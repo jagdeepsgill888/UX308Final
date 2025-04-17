@@ -31,9 +31,31 @@ function largest_product(val1, val2, val3) {
     } else if ((val2 >= val3 && val3 >= val1) || (val3 >= val2 && val2 >= val1)) {
         product = val2 * val3;
     } else {
-        product = "Error";
+        product = "Error! Please enter 3 sets of valid numbers";
     }
     return product;
 }
 
-export {hello, colour_mix, largest_product}
+function day_of_the_week(day_num) {
+    let day;
+    if (day_num === 1) {
+        day = "Day - Sunday";
+    } else if (day_num === 2) {
+        day = "Day - Monday";
+    } else if (day_num === 3) {
+        day = "Day - Tuesday";
+    } else if (day_num === 4) {
+        day = "Day - Wednesday";
+    } else if (day_num === 5) {
+        day = "Day - Thursday";
+    } else if (day_num === 6) {
+        day = "Day - Friday";
+    } else if (day_num === 7) {
+        day = "Day - Saturday";
+    } else {
+        day = "Error please enter a number between 1-7";
+    }
+    return day;
+}
+
+export {hello, colour_mix, largest_product, day_of_the_week}

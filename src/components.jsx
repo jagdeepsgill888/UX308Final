@@ -1,4 +1,4 @@
-import {hello, colour_mix, largest_product, } from './functions.js';
+import {hello, colour_mix, largest_product, day_of_the_week } from './functions.js';
 
 function Question1(){
     return <section>
@@ -33,4 +33,15 @@ function Question3(){
     </section>;
 }
 
-export {Question1, Question2, Question3}
+function Question4(){
+    return <section>
+4. Write a function that determines that the name of a day in a week from an an integer day number.
+
+      <h2>results</h2>
+      <p>Please enter a number between 1 and 7: Number 2 day_of_the_week(2) == "{day_of_the_week(2)}"</p>
+      <p>Please enter a number between 1 and 7: Number 8 day_of_the_week(8) == "{day_of_the_week(8)}"</p>
+      <p>Please enter a number between 1 and 7: Number 7 day_of_the_week(3) == "{day_of_the_week(7)}"</p>
+    </section>;
+}
+
+export {Question1, Question2, Question3, Question4}

@@ -58,4 +58,23 @@ function day_of_the_week(day_num) {
     return day;
 }
 
-export {hello, colour_mix, largest_product, day_of_the_week}
+function pay_raise(status, years, salary) {
+    let new_salary;
+
+    if (status === "F" && years >= 10) {
+        new_salary = salary + (salary * 0.05);
+    } else if (status === "F" && years <= 4) {
+        new_salary = salary + (salary * 0.015);
+    } else if (status === "P" && years >= 10) {
+        new_salary = salary + (salary * 0.03);
+    } else if (status === "P" && years <= 4) {
+        new_salary = salary + (salary * 0.01);
+    } else {
+        new_salary = salary + (salary * 0.02);
+    }
+
+    return new_salary.toFixed(2);
+}
+
+
+export {hello, colour_mix, largest_product, day_of_the_week, pay_raise}

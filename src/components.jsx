@@ -1,4 +1,4 @@
-import {hello, colour_mix, largest_product, day_of_the_week } from './functions.js';
+import {hello, colour_mix, largest_product, day_of_the_week, pay_raise} from './functions.js';
 
 function Question1(){
     return <section>
@@ -44,4 +44,14 @@ function Question4(){
     </section>;
 }
 
-export {Question1, Question2, Question3, Question4}
+function Question5(){
+    return <section>
+5. Write a function that determines an employee's new salary after a pay raise.
+
+      <h2>results</h2>
+      <p>The pay raise of pay_raise('F', 2, 2600)  == "{pay_raise('F', 2, 2600)}"</p>
+      <p>The pay raise of pay_raise('P', 12, 2600)  == "{pay_raise('P', 12, 2600)}"</p>
+      <p>The pay raise of pay_raise('F', 8, 2600)  == "{pay_raise('P', 8, 2600)}"</p>
+    </section>;
+}
+export {Question1, Question2, Question3, Question4, Question5}

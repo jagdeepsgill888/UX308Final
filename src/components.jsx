@@ -12,7 +12,7 @@ function Question1(){
 
 function Question2(){
     return <section>
-2. Write a function that determines the secondary rgb_colour from mixing two primaryRGB (Red, Green, Blue) colours.
+2. Write a function that determines the secondary rgb_colour from mixing two primary RGB (Red, Green, Blue) colours.
 
       <h2>results</h2>
       <p>First colour red & Second colour blue:colour_mix("red", "blue") == "{colour_mix('red', 'blue')}"</p>
@@ -57,7 +57,7 @@ function Question5(){
 
 function Question6(){
     return <section>
-6. Write a function that determines if a year is a leap year..
+6. Write a function that determines if a year is a leap year.
 
       <h2>results</h2>
       <p> The year of 1500 is_leap(1500) == "{is_leap(1500).toString()}"</p>

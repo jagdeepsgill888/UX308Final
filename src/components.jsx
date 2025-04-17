@@ -1,4 +1,4 @@
-import {hello, colour_mix, largest_product, day_of_the_week, pay_raise} from './functions.js';
+import {hello, colour_mix, largest_product, day_of_the_week, pay_raise, is_leap} from './functions.js';
 
 function Question1(){
     return <section>
@@ -54,4 +54,16 @@ function Question5(){
       <p>The pay raise of pay_raise('F', 8, 2600)  == "{pay_raise('P', 8, 2600)}"</p>
     </section>;
 }
-export {Question1, Question2, Question3, Question4, Question5}
+
+function Question6(){
+    return <section>
+6. Write a function that determines if a year is a leap year..
+
+      <h2>results</h2>
+      <p> The year of 1500 is_leap(1500) == "{is_leap(1500).toString()}"</p>
+      <p> The year of 1400 is_leap(2400) == "{is_leap(2400).toString()}"</p>
+      <p> The year of 1000 is_leap(1000) == "{is_leap(1000).toString()}"</p>
+    </section>;
+}
+
+export {Question1, Question2, Question3, Question4, Question5, Question6}

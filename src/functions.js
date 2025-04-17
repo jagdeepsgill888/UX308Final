@@ -76,5 +76,21 @@ function pay_raise(status, years, salary) {
     return new_salary.toFixed(2);
 }
 
+function is_leap(year){
+    let result;
 
-export {hello, colour_mix, largest_product, day_of_the_week, pay_raise}
+    if (year % 400 === 0) {
+        result = true;
+    } else if (year % 100 === 0) {
+        result = false;
+    } else if (year % 4 === 0) {
+        result = true;
+    } else {
+        result = false;
+    }
+
+    return result;
+}
+
+
+export {hello, colour_mix, largest_product, day_of_the_week, pay_raise, is_leap}

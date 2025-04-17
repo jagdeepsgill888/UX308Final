@@ -15,9 +15,9 @@ function Question2(){
 2. Write a function that determines the secondary rgb_colour from mixing two primaryRGB (Red, Green, Blue) colours
 
       <h2>results</h2>
-      <p>The secondary of colour_mix("red", "blue") == "{colour_mix('red', 'blue')}"</p>
-      <p>The secondary of colour_mix("green", "green") == "{colour_mix('green', 'green')}"</p>
-      <p>The secondary of colour_mix("green", "pink") == "{colour_mix('green', 'pink')}"</p>
+      <p>First colour red & Second colour blue:colour_mix("red", "blue") == "{colour_mix('red', 'blue')}"</p>
+      <p>First colour green & Second colour green:colour_mix("green", "green") == "{colour_mix('green', 'green')}"</p>
+      <p>First colour red & Second colour pink:colour_mix("red", "pink") == "{colour_mix('red', 'pink')}"</p>
     </section>;
 }
 

@@ -1,4 +1,4 @@
-import {hello} from './functions.js';
+import {hello, colour_mix} from './functions.js';
 
 function Question1(){
     return <section>
@@ -10,4 +10,16 @@ function Question1(){
     </section>;
 }
 
-export {Question1}
+function Question2(){
+    return <section>
+2. Write a function that determines the secondary rgb_colour from mixing two primaryRGB (Red, Green, Blue) colours
+
+      <h2>results</h2>
+      <p>The secondary of colour_mix("red", "blue") == "{colour_mix('red', 'blue')}"</p>
+      <p>The secondary of colour_mix("green", "green") == "{colour_mix('green', 'green')}"</p>
+      <p>The secondary of colour_mix("green", "pink") == "{colour_mix('green', 'pink')}"</p>
+    </section>;
+}
+
+
+export {Question1, Question2}

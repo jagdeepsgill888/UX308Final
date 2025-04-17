@@ -22,5 +22,18 @@ function colour_mix(rgb_colour1, rgb_colour2){
 }
 
 
+function largest_product(val1, val2, val3) {
+    let product;
+    if ((val1 >= val2 && val2 >= val3) || (val2 >= val1 && val1 >= val3)) {
+        product = val1 * val2;
+    } else if ((val1 >= val3 && val3 >= val2) || (val3 >= val1 && val1 >= val2)) {
+        product = val1 * val3;
+    } else if ((val2 >= val3 && val3 >= val1) || (val3 >= val2 && val2 >= val1)) {
+        product = val2 * val3;
+    } else {
+        product = "Error";
+    }
+    return product;
+}
 
-export {hello, colour_mix}
+export {hello, colour_mix, largest_product}
